@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+    html, body, #mapDiv {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    </style>
+</head>
+<body>
+    <div id="mapDiv"></div>
+
+    <script nonce="QaFg58mqp3xXBZSIy1PGNA">
+    function onEmbedLoad() {
+        initEmbed([null, null, null, null, null, [[[2, "spotlit", null, null, null, null, null, [null, null, null, null, null, null, null, null, null, null, 11, null, [null, null, null, null, null, null, null, null, null, null, null, null, null, 1]]]], null, null, [[null, null, null, null, null, null, null, null, null, null, null, null, null, [[["5160656657808540759", "4547592737402924989"], "/g/11c16zz4ty", null, [487153323, 114811019], null, null, null, 1, null, null, null, null, null, null, "gcid:compound_building"], 0, null, null, null, 0, null, 0]]]], null, ["de"], [null, null, null, "/maps/api/js/ApplicationService.GetEntityDetails", "/maps/embed/upgrade204", null, "/maps/embed/record204"], null, null, null, null, null, null, null, null, "6pEbaLPaOYuni-gPkeyGsAs", null, null, null, [[[null, 11.4803722, 48.7153644], null, null, 13.10000038146973], 15, 0, [["0x479e55e3506ec457:0x3f1c4b80200c2fbd", "Weberstraße 5, 85077 Manching", [48.7153323, 11.4811019]], "Weberstraße 5", ["85077 Manching"], null, null, null, null, null, null, null, null, null, "Gebäude", "Weberstraße 5, 85077 Manching", null, null, null, null, null, null, null, null, null, 1, 1, null, null, "ChIJV8RuUONVnkcRvS8MIIBLHD8", null, null, "0ahUKEwiz95z66pGNAxWL0wIHHRG2AbYQ8BcIAygA"], null, null, null, [48.7153644, 11.4803722]], null, null, null, 0, null, null, null, null, null, null, [1]]);
+    }
+    function onApiLoad() {
+        var embed = document.createElement('script');
+        embed.src = "https://maps.gstatic.com/maps-api-v3/embed/js/60/10/intl/de_ALL/init_embed.js";
+        document.body.appendChild(embed);
+    }
+    </script>
+    <link rel="preload" href="https://maps.gstatic.com/maps-api-v3/embed/js/60/10/intl/de_ALL/init_embed.js" nonce="QaFg58mqp3xXBZSIy1PGNA" as="script"/>
+    <script src="https://maps.googleapis.com/maps/api/js?client=google-maps-embed&amp;paint_origin=&amp;libraries=geometry,search&amp;v=weekly&amp;loading=async&amp;language=de&amp;callback=onApiLoad" nonce="QaFg58mqp3xXBZSIy1PGNA" async defer></script>
+</body>
+</html>

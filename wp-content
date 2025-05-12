@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# Ziel-URL
+URL="https://hotelgastpark.de"
+
+# Zielverzeichnis
+OUTDIR="hotelgastpark_bilder"
+mkdir -p "$OUTDIR"
+
+# HTML holen und alle Bild-URLs extrahieren
+curl -s "$URL" | \
+grep -Eo '<img[^>]+src="[^"]+"' | \
+grep -Eo 'src="[^"]+"' | \
+cut -d'"' -f2 | \
+while read -r imgurl; do
+    # Vollständige URL ergänzen, wenn nötig
+    if [[ $imgurl != http* ]]; then
+        fullurl="$URL$imgurl"
+    else
+        fullurl="$imgurl"
+    fi
+
+    # Dateiname aus URL extrahieren
+    filename=$(basename "$fullurl")
+
+    # Download ins Zielverzeichnis
+    wget -q "$fullurl" -O "$OUTDIR/$filename" && echo "Gespeichert: $filename"
+done
