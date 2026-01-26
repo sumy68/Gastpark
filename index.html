@@ -9,166 +9,16 @@
   <!-- Webfont -->
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet" />
 
-  <!-- Deine (optionale) bestehende Styles -->
-  <link rel="stylesheet" href="style.css?v=1.0" />
-
-  <style>
-    :root{
-      --gold:#d1bc8a;
-      --bg:#000;
-      --fg:#fff;
-      --muted:#1e1e1e;
-      --container:1200px;
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:#000;color:#fff}
-    img{max-width:100%;height:auto;display:block}
-    a{color:inherit}
-
-    .container{max-width:var(--container);margin:0 auto;padding:0 1rem}
-    .sp-4{margin-top:4rem}
-    .sp-6{margin-top:6rem}
-    .sp-8{margin-top:8rem}
-
-    /* Header / Logo */
-    .topbar{
-      background:#000;
-      color:#fff;
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      height:200px;
-      padding-top:40px;
-    }
-    .topbar img{max-height:140px;width:auto}
-
-    /* Navigation */
-    .nav{
-      position:sticky; top:0; z-index:50;
-      background:#000; border-top:1px solid rgba(255,255,255,.08); border-bottom:1px solid rgba(255,255,255,.08);
-    }
-    .nav ul{
-      list-style:none;margin:0;padding:0.875rem 0;
-      display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;
-    }
-    .nav a{
-      text-decoration:none;color:var(--gold);
-      border:2px solid #fff;border-radius:6px;
-      padding:.5rem 1rem;transition:.25s;
-      display:inline-block;
-    }
-    .nav a:hover{background:#fff;color:#000;border-color:var(--gold)}
-
-    /* Hero */
-    .hero{position:relative;border-radius:1rem;overflow:hidden}
-    .hero img{width:100%;object-fit:cover}
-    .hero::after{
-      content:"";position:absolute;inset:0;background:rgba(0,0,0,.45)
-    }
-    .hero__content{
-      position:absolute;inset:0;
-      display:flex;flex-direction:column;
-      align-items:center;justify-content:center;
-      text-align:center;
-      padding:2rem;
-      z-index:1;
-    }
-    .hero h1{
-      margin:0 0 1.25rem 0;
-      font-family:"Merriweather",serif;
-      font-size:clamp(1.7rem, 4vw, 2.6rem);
-      line-height:1.25;
-      color:#fff;
-      transform:translateY(-3rem);
-    }
-    .hero h1 span{color:var(--gold)}
-
-    .btn{
-      display:inline-block;background:var(--gold);color:#1e1e1e;
-      font-family:"Merriweather",serif;font-weight:700;
-      padding:1rem 2rem;border-radius:2rem;text-decoration:none;
-      transition:.25s;font-size:1.125rem
-    }
-    .btn:hover{filter:brightness(1.08);transform:translateY(-1px)}
-
-    /* Sektionen / H2s */
-    .section{padding:3rem 0}
-    .section h2{
-      color:var(--gold);text-align:center;
-      font-family:"Merriweather",serif;
-      font-size:clamp(1.5rem, 2.5vw, 2rem);
-      margin:0 0 2rem 0;letter-spacing:.5px;
-    }
-
-    /* Info-Kacheln */
-    .info-grid{
-      display:flex;flex-wrap:wrap;gap:2rem;justify-content:center;
-    }
-    .info-card{
-      background:var(--muted);color:#fff;border-radius:1rem;
-      padding:2rem;max-width:300px;flex:1 1 260px;text-align:center;line-height:1.8;
-    }
-    .info-card h3{
-      color:var(--gold);font-family:"Merriweather",serif;
-      font-size:1.125rem;margin:0 0 1.25rem 0;
-    }
-    .rule{border:none;border-top:1px solid var(--gold);margin:1.25rem 0}
-
-    /* Komfort & Genuss Karten */
-    .grid-cards{
-      display:grid;gap:1.5rem;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    }
-    .card{
-      background:var(--muted);color:#fff;border-radius:1rem;overflow:hidden;
-      box-shadow:0 6px 18px rgba(0,0,0,.25);transition:.2s;
-    }
-    .card:hover{transform:translateY(-4px);box-shadow:0 10px 24px rgba(0,0,0,.28)}
-    .card img{width:100%;height:200px;object-fit:cover}
-    .card-body{padding:1.25rem 1.25rem 1.5rem;text-align:center}
-    .card h4{
-      color:var(--gold);font-family:"Merriweather",serif;font-size:1.125rem;margin:.25rem 0 .75rem
-    }
-    .card p{font-family:Arial, sans-serif;font-size:.975rem;line-height:1.6;margin:0}
-
-    /* Galerie */
-    .gallery{
-      display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    }
-    .gallery img{width:100%;border-radius:1rem;object-fit:cover}
-
-    /* Textblock */
-    .text{max-width:900px;margin:0 auto;color:#fff;font:400 1rem/1.8 Arial, sans-serif;text-align:justify}
-    .cta-center{display:flex;justify-content:center;gap:.5rem;flex-wrap:wrap;margin-top:2rem}
-
-    /* Header unten (Logo + Nav kompakt) */
-    .header-flex{
-      display:flex;gap:2rem;justify-content:space-between;align-items:center;
-      padding:2rem 1rem;max-width:var(--container);margin:0 auto;
-    }
-    .header-flex .logo-img{max-width:150px;height:auto}
-
-    /* Responsive Tweaks */
-    @media (max-width: 768px){
-      .nav ul{gap:.75rem}
-      .btn{font-size:1rem;padding:.875rem 1.5rem}
-      .card img{height:180px}
-      .text{font-size:.95rem;text-align:left;padding:0 .25rem}
-      .hero h1{transform:translateY(-2rem)}
-    }
-    @media (max-width: 480px){
-      .hero h1{transform:translateY(-1rem)}
-      .btn{width:90%}
-      .card img{height:150px}
-      .info-card{padding:1.5rem}
-    }
-  </style>
+  <!-- Externes Stylesheet -->
+  <link rel="stylesheet" href="style.css?v=2.0" />
 </head>
+
 <body>
 
-  <!-- Hero-Logo oben -->
+  <!-- Top Logo -->
   <div class="topbar">
-    <a href="/">
-      <img src="images/image01.jpeg" alt="Gastpark Hotel – Logo">
+    <a href="index.html">
+      <img src="images/image01.jpeg" alt="Gastpark Hotel Logo">
     </a>
   </div>
 
@@ -185,9 +35,9 @@
     </div>
   </nav>
 
-  <!-- Hero mit Overlay -->
-  <section id="Herzlich-willkommen-im-gastpark-hotel" class="section container sp-4" style="background-color:#000;">
-    <div class="hero" style="width: 100%; max-width: 1200px; margin: 0 auto;">
+  <!-- Hero -->
+  <section class="section container sp-4">
+    <div class="hero">
       <img src="images/image02.jpg" alt="Zimmer im Gastpark Hotel">
       <div class="hero__content">
         <h1>
@@ -195,122 +45,138 @@
           Ihr Aufenthalt mit Stil &amp; Komfort
         </h1>
 
-        <a class="btn" href="https://direct-book.com/properties/gastparkhoteldirect?locale=de&amp;items[0][adults]=2&amp;items[0][children]=0&amp;items[0][infants]=0&amp;currency=EUR&amp;checkInDate=2025-03-09&amp;checkOutDate=2025-03-10&amp;trackPage=yes"
-           target="_blank" rel="noopener">
+        <a
+          class="btn"
+          href="https://direct-book.com/properties/gastparkhoteldirect?locale=de&items[0][adults]=2&items[0][children]=0&items[0][infants]=0&currency=EUR&checkInDate=2025-03-09&checkOutDate=2025-03-10&trackPage=yes"
+          target="_blank"
+          rel="noopener"
+        >
           Hier Zimmer buchen
         </a>
       </div>
     </div>
   </section>
 
-  <!-- HOTELINFOS -->
+  <!-- Hotelinfos -->
   <section class="section container sp-6">
     <h2>Hotelinfos</h2>
+
     <div class="info-grid">
       <div class="info-card">
         <h3>Check-in &amp; Check-out</h3>
         <p><strong>Check-in:</strong> ab 15:00 Uhr</p>
         <p><strong>Check-out:</strong> bis 11:00 Uhr</p>
-        <p><strong>Early Check-in:</strong> 10 € p.P. (ab 12 Uhr)</p>
-        <p><strong>Late Check-in:</strong> 10 € p.P. (nach 23 Uhr)</p>
+        <p><strong>Early Check-in:</strong> 10 € pro Person ab 12 Uhr</p>
+        <p><strong>Late Check-in:</strong> 10 € pro Person nach 23 Uhr</p>
         <hr class="rule">
-        <p><strong>Stornobedingungen:</strong><br><br>Kostenlose Stornierung bis 24&nbsp;Std. vor Check-in, danach voller Übernachtungspreis.</p>
+        <p><strong>Stornierung:</strong><br>Kostenlos bis 24 Stunden vor Anreise</p>
       </div>
 
       <div class="info-card">
-        <h3>Frühstückszeiten</h3>
-        <p><strong>Mo–Fr:</strong> 7:00–8:00 Uhr</p>
+        <h3>Frühstück</h3>
+        <p><strong>Montag bis Freitag:</strong> 7:00–8:00 Uhr</p>
         <hr class="rule">
-        <p><strong>Hinweis:</strong><br><br>Sa &amp; So kein Frühstücksangebot.</p>
+        <p>Samstag &amp; Sonntag kein Frühstücksangebot</p>
       </div>
 
       <div class="info-card">
         <h3>Haustiere</h3>
-        <p><strong>Erlaubt:</strong> Hunde &amp; Katzen</p>
-        <p><strong>Kleine Hunde &amp; Katzen:</strong> bis 30&nbsp;cm – 10&nbsp;€ / Nacht</p>
-        <p><strong>Große Hunde:</strong> ab 30&nbsp;cm – 20&nbsp;€ / Nacht</p>
-        <p><strong>Blindenhunde:</strong> kostenlos</p>
+        <p>Kleine Hunde &amp; Katzen bis 30 cm: 10 € pro Nacht</p>
+        <p>Große Hunde ab 30 cm: 20 € pro Nacht</p>
+        <p>Blindenhunde kostenlos</p>
       </div>
 
       <div class="info-card">
         <h3>Parken</h3>
-        <p><strong>PKW:</strong> kostenlos</p>
-        <p><strong>LKW, Busse &amp; Wohnwagen:</strong> 20&nbsp;€ / Tag</p>
-        <p><strong>PKW mit Anhänger:</strong> 10&nbsp;€ / Tag</p>
+        <p>PKW kostenlos</p>
+        <p>LKW, Busse &amp; Wohnwagen: 20 € pro Tag</p>
+        <p>PKW mit Anhänger: 10 € pro Tag</p>
       </div>
     </div>
   </section>
 
-  <!-- KOMFORT & GENUSS -->
+  <!-- Komfort & Genuss -->
   <section class="section container sp-8">
     <h2>Komfort &amp; Genuss für Ihren Besuch</h2>
+
     <div class="grid-cards">
       <article class="card">
-        <img src="images/image04.jpeg" alt="Komfortable Einzelzimmer">
+        <img src="images/image04.jpeg" alt="Einzelzimmer">
         <div class="card-body">
-          <h4><strong>Komfortable Einzelzimmer</strong></h4>
-          <p>Gemütliche, modern eingerichtete Zimmer mit erstklassigem Komfort für Alleinreisende.</p>
+          <h4>Komfortable Einzelzimmer</h4>
+          <p>Modern eingerichtet für Alleinreisende mit hohem Komfort.</p>
         </div>
       </article>
 
       <article class="card">
-        <img src="images/image05.jpeg" alt="Komfortable Doppelzimmer">
+        <img src="images/image05.jpeg" alt="Doppelzimmer">
         <div class="card-body">
-          <h4><strong>Komfortable Doppelzimmer</strong></h4>
-          <p>Geräumige Doppelzimmer mit stilvollen Details und Annehmlichkeiten für erholsame Nächte.</p>
+          <h4>Komfortable Doppelzimmer</h4>
+          <p>Geräumige Zimmer für entspannte Nächte.</p>
         </div>
       </article>
 
       <article class="card">
-        <img src="images/image06.jpeg" alt="Kontinentales Frühstück">
+        <img src="images/image06.jpeg" alt="Frühstücksraum">
         <div class="card-body">
-          <h4><strong>Kontinentales Frühstück</strong></h4>
-          <p>Genießen Sie ein kontinentales Frühstück in unserem Frühstücks- und Veranstaltungsraum.</p>
+          <h4>Kontinentales Frühstück</h4>
+          <p>Frühstück in unserem Veranstaltungs- und Frühstücksraum.</p>
         </div>
       </article>
     </div>
   </section>
 
-  <!-- EVENTSÄLE -->
+  <!-- Eventsäle -->
   <section class="section container sp-8">
     <h2>Unsere Eventsäle</h2>
+
     <div class="gallery">
-      <img src="images/image07.png" alt="Eventsaal – Ansicht 1">
-      <img src="images/image08.png" alt="Eventsaal – Ansicht 2">
-      <img src="images/image09.png" alt="Eventsaal – Ansicht 3">
-      <img src="images/image10.png" alt="Eventsaal – Ansicht 4">
-      <img src="images/image11.png" alt="Eventsaal – Ansicht 5">
-      <img src="images/image12.png" alt="Eventsaal – Ansicht 6">
+      <img src="images/image07.png" alt="Eventsaal">
+      <img src="images/image08.png" alt="Eventsaal">
+      <img src="images/image09.png" alt="Eventsaal">
+      <img src="images/image10.png" alt="Eventsaal">
+      <img src="images/image11.png" alt="Eventsaal">
+      <img src="images/image12.png" alt="Eventsaal">
     </div>
   </section>
 
-  <!-- ANLÄSSE -->
+  <!-- Anlässe -->
   <section class="section container sp-8">
     <h2>Perfekt für Ihre besonderen Anlässe</h2>
+
     <div class="text">
-      <p>Unser Hotel eignet sich hervorragend für Firmenfeiern und Events, da wir über einen großzügigen Veranstaltungsraum mit Platz für bis zu 250 Personen verfügen. Dieser Raum ist ideal für geschäftliche und private Anlässe wie Geburtstage, Hochzeiten oder Jubiläen.</p>
-      <p>Zusätzlich steht Ihnen in Ingolstadt ein weiterer Saal für bis zu 1.000 Personen zur Verfügung – perfekt für große Veranstaltungen.</p>
-      <p>Wir übernehmen gerne Dekoration, Catering und Planung nach Ihren Wünschen, damit Ihr Event unvergesslich wird.</p>
+      <p>Unser Hotel eignet sich ideal für Firmenfeiern, Hochzeiten, Geburtstage und Jubiläen.</p>
+      <p>Ein Veranstaltungsraum für bis zu 250 Personen steht direkt vor Ort zur Verfügung.</p>
+      <p>Zusätzlich bieten wir einen großen Saal in Ingolstadt für bis zu 1.000 Gäste.</p>
     </div>
+
     <div class="cta-center">
-      <a class="btn" href="tel:+4917662275779">Hier anrufen</a>
-      <a class="btn" href="https://eventpark-in.de" target="_blank" rel="noopener">Hier geht’s zu unseren Eventsälen</a>
+      <a class="btn" href="tel:+4917662275779">Jetzt anrufen</a>
+      <a class="btn" href="https://eventpark-in.de" target="_blank" rel="noopener">
+        Zu unseren Eventsälen
+      </a>
     </div>
   </section>
 
   <!-- Karte -->
-  <section class="section container sp-6">
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2662.1447022494165!2d11.47780351584423!3d48.71542357927437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e7de1966eeaa5%3A0x272d1c2c8b5f254a!2sHotelgastpark!5e0!3m2!1sde!2sde!4v1717000000000!5m2!1sde!2sde"
-      width="100%" height="450" style="border:0;border-radius:10px"
-      allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-      title="Google Maps – Gastpark Hotel"></iframe>
-  </section>
+<section class="section container sp-6">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2662.1447022494165!2d11.47780351584423!3d48.71542357927437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e7de1966eeaa5%3A0x272d1c2c8b5f254a!2sHotelgastpark!5e0!3m2!1sde!2sde!4v1717000000000!5m2!1sde!2sde"
+    width="100%"
+    height="450"
+    style="border:0;"
+    allowfullscreen
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    title="Google Maps – Gastpark Hotel">
+  </iframe>
+</section>
 
-  <!-- Kompakter Footer-Header (Logo + Nav) -->
+
+  <!-- Footer Navigation -->
   <div class="header-flex">
     <nav aria-label="Fußnavigation">
-      <ul style="list-style:none;margin:0;padding:0;display:flex;gap:1rem;flex-wrap:wrap">
+      <ul>
         <li><a href="index.html">Start</a></li>
         <li><a href="uber-uns.html">Über uns</a></li>
         <li><a href="kontakt.html">Kontakt</a></li>
@@ -318,9 +184,9 @@
         <li><a href="datenschutzerklärung.html">Datenschutz</a></li>
       </ul>
     </nav>
-    <img src="images/image14.jpeg" alt="Gastpark Logo" class="logo-img" />
+
+    <img src="images/image14.jpeg" alt="Gastpark Hotel Logo" class="logo-img">
   </div>
 
-  <script src="https://assurance.sysnetgs.com/assurancecard/be8e7fbc4499573fc0f299fe28211f4f3de6962d17aeb06303a51472b4273934/cardJs" type="text/javascript"></script>
 </body>
 </html>
