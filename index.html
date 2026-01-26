@@ -22,10 +22,16 @@
     </a>
   </div>
 
-  <!-- Navigation -->
-  <nav class="nav">
-    <div class="container">
-      <ul>
+  
+  <nav class="nav" aria-label="Hauptnavigation">
+    <div class="container nav-inner">
+      <button id="navToggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="navMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+  
+      <ul id="navMenu">
         <li><a href="index.html">Start</a></li>
         <li><a href="uber-uns.html">Über uns</a></li>
         <li><a href="kontakt.html">Kontakt</a></li>
@@ -34,6 +40,8 @@
       </ul>
     </div>
   </nav>
+  
+  
 
   <!-- Hero -->
   <section class="section container sp-4">
@@ -187,6 +195,7 @@
 
     <img src="images/image14.jpeg" alt="Gastpark Hotel Logo" class="logo-img">
   </div>
+  <script src="menu.js"></script>
 
 </body>
 </html>

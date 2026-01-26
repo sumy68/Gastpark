@@ -1,268 +1,205 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Datenschutzerklärung - Gastpark Hotel</title>
-  <style>
-    body {
-      background-color: #000;
-      color: #fff;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
+  <meta charset="utf-8" />
+  <title>Datenschutzerklärung – Gastpark Hotel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Datenschutzerklärung des Gastpark Hotels in Manching. Informationen zur Verarbeitung personenbezogener Daten." />
 
-    header {
-      text-align: center;
-      padding: 2cm 1rem;
-    }
+  <!-- Webfont -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet" />
 
-    .logo-img {
-      max-width: 300px;
-      height: auto;
-    }
-
-    nav.custom-nav {
-      padding-top: 3cm;
-    }
-
-    .custom-nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      flex-wrap: wrap;
-    }
-
-    .custom-nav a {
-      text-decoration: none;
-      color: #d1bc8a;
-      border: 2px solid #fff;
-      padding: 0.5rem 1rem;
-      border-radius: 6px;
-      transition: all 0.3s ease;
-    }
-
-    .custom-nav a:hover {
-      background-color: #fff;
-      color: #000;
-      border-color: #d1bc8a;
-    }
-
-    main {
-      padding: 2rem;
-      max-width: 960px;
-      margin: auto;
-    }
-
-    h1 {
-      text-align: center;
-      margin-bottom: 3cm;
-    }
-
-    h2 {
-      color: #d1bc8a;
-    }
-
-    footer {
-      background-color: #000;
-      color: #fff;
-      text-align: center;
-      padding: 2cm 1rem;
-    }
-
-    .footer-nav a {
-      color: #fff;
-      margin: 0 1rem;
-      text-decoration: none;
-    }
-
-    .logo-img-footer {
-      max-width: 200px;
-      margin-top: 2rem;
-    }
-
-    a {
-      color: #d1bc8a;
-      text-decoration: underline;
-    }
-  </style>
+  <!-- Externes Stylesheet -->
+  <link rel="stylesheet" href="style.css?v=2.0" />
 </head>
+
 <body>
-  <div id="root">
-    <div style="background-color:#000000; color:#ffffff; display: flex; justify-content: center; align-items: center; height: 200px; padding-top: 40px;">
-        <a href="/" class="logo-link">
-          <img decoding="async"
-               src="images/image01.jpeg"
-               srcset="images/image01.jpeg 1x"
-               sizes="100vw"
-               class="image-img image-geometry-rectangle-1 no-aspect-ratio"
-               data-shape="rectangle"
-               alt="Hotel Logo"
-               style="max-width: 100%; height: auto;" />      
-        </a>
-      </div>
+
+  <!-- Top Logo -->
+  <div class="topbar">
+    <a href="index.html">
+      <img src="images/image01.jpeg" alt="Gastpark Hotel Logo">
+    </a>
   </div>
-  <nav class="custom-nav">
-    <ul>
-      <li><a href="index.html">Start</a></li>
-      <li><a href="uber-uns.html">Über uns</a></li>
-      <li><a href="kontakt.html">Kontakt</a></li>
-      <li><a href="impressum.html">Impressum</a></li>
-      <li><a href="datenschutzerklaerung.html">Datenschutz</a></li>
-    </ul>
-  </nav>
+
   
-  <main>
-    <h1 style="color: #d1bc8a;">Datenschutzerklärung</h1>
+  <nav class="nav" aria-label="Hauptnavigation">
+    <div class="container nav-inner">
+      <button id="navToggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="navMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+  
+      <ul id="navMenu">
+        <li><a href="index.html">Start</a></li>
+        <li><a href="uber-uns.html">Über uns</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="impressum.html">Impressum</a></li>
+        <li><a href="datenschutzerklärung.html">Datenschutz</a></li>
+      </ul>
+    </div>
+  </nav>
 
+  <!-- Datenschutz Content -->
+  <section class="section container sp-6">
+    <h2>Datenschutzerklärung</h2>
 
-    <h2>1. Name und Kontaktdaten des für die Verarbeitung Verantwortlichen</h2>
-    <p>Diese Datenschutz-Information gilt für die Datenverarbeitung durch:</p>
-    <p><strong>Verantwortlicher:</strong> Gastpark GmbH<br>
-    Weberstr. 5, 85077 Manching, Deutschland<br>
-    E-Mail: <a href="mailto:info@gastpark.de">info@gastpark.de</a><br>
-    Tel: +49 (0)8459 - 3329577<br>
-    Fax: +49 (0)8459 - 3329578</p>
-    
-    <h2>2. Erhebung und Speicherung personenbezogener Daten sowie Art und Zweck von deren Verwendung</h2>
-    
-    <h3>a) Beim Besuch der Website</h3>
-    <p>Beim Aufrufen unserer Website <a href="https://www.hotelgastpark.de">www.hotelgastpark.de</a> werden durch den auf Ihrem Endgerät zum Einsatz kommenden Browser automatisch Informationen an den Server unserer Website gesendet. Diese Informationen werden temporär in einem sogenannten Logfile gespeichert. Folgende Informationen werden dabei ohne Ihr Zutun erfasst und bis zur automatisierten Löschung gespeichert:</p>
-    <ul>
-      <li>IP-Adresse des anfragenden Rechners</li>
-      <li>Datum und Uhrzeit des Zugriffs</li>
-      <li>Name und URL der abgerufenen Datei</li>
-      <li>Website, von der aus der Zugriff erfolgt (Referrer-URL)</li>
-      <li>Verwendeter Browser und ggf. das Betriebssystem Ihres Rechners sowie der Name Ihres Access-Providers</li>
-    </ul>
-    <p>Die genannten Daten werden durch uns zu folgenden Zwecken verarbeitet:</p>
-    <ul>
-      <li>Gewährleistung eines reibungslosen Verbindungsaufbaus der Website</li>
-      <li>Gewährleistung einer komfortablen Nutzung unserer Website</li>
-      <li>Auswertung der Systemsicherheit und -stabilität</li>
-      <li>Zu weiteren administrativen Zwecken</li>
-    </ul>
-    <p>Die Rechtsgrundlage für die Datenverarbeitung ist Art. 6 Abs. 1 S. 1 lit. f DSGVO. Unser berechtigtes Interesse folgt aus oben aufgelisteten Zwecken zur Datenerhebung. In keinem Fall verwenden wir die erhobenen Daten zu dem Zweck, Rückschlüsse auf Ihre Person zu ziehen.</p>
-    <p>Darüber hinaus setzen wir beim Besuch unserer Website Cookies sowie Analysedienste ein. Nähere Erläuterungen dazu erhalten Sie unter den Ziffern 4 und 6 dieser Datenschutzerklärung.</p>
-    
-    <h3>b) Bei Nutzung unseres Kontaktformulars</h3>
-    <p>Bei Fragen jeglicher Art bieten wir Ihnen die Möglichkeit, mit uns über ein auf der Website bereitgestelltes Formular Kontakt aufzunehmen. Dabei ist die Angabe einer gültigen E-Mail-Adresse und eines Namens erforderlich, damit wir wissen, von wem die Anfrage stammt und um diese beantworten zu können. Weitere Angaben können freiwillig getätigt werden.</p>
-    <p>Die Datenverarbeitung zum Zwecke der Kontaktaufnahme mit uns erfolgt nach Art. 6 Abs. 1 S. 1 lit. a DSGVO auf Grundlage Ihrer freiwillig erteilten Einwilligung.</p>
-    <p>Die für die Benutzung des Kontaktformulars von uns erhobenen personenbezogenen Daten werden nach Erledigung der von Ihnen gestellten Anfrage automatisch gelöscht.</p>
-    
-    <h3>c) Bei Buchung oder Reservierung eines Zimmers</h3>
-    <p>Bei Buchung oder Reservierung eines Zimmers erheben wir folgende Daten:</p>
-    <ul>
-      <li>Kontaktdaten (Nachname, Vorname, Telefonnummer, E-Mail usw.)</li>
-      <li>Persönliche Daten (Geburtsdatum, Staatsangehörigkeit usw.)</li>
-      <li>Angaben zu Ihren Kindern (Vornamen, Geburtsdatum, Alter usw.)</li>
-      <li>Ihre Kreditkartennummer (zu Transaktions- und Reservierungszwecken)</li>
-      <li>Ihr Ankunfts- und Abreisedatum</li>
-      <li>Ihre Vorlieben und Interessen (Raucher- oder Nichtraucherzimmer, bevorzugtes Stockwerk, Art der Aufbettung, Art der Zeitungen/Zeitschriften, Sport- oder kulturelle Interessen)</li>
-      <li>Ihre Fragen/Anmerkungen vor, während oder nach einem Aufenthalt in unserem Hotel</li>
-    </ul>
-    <p>Die genannten Daten werden durch uns zu folgenden Zwecken verarbeitet:</p>
-    <ul>
-      <li>Erfüllung unserer vertraglichen Verpflichtungen gegenüber Ihnen</li>
-      <li>Erstellung und Aufbewahrung gesetzlich vorgeschriebener Belege unter Beachtung von Bilanzierungsgrundsätzen</li>
-      <li>Management der Reservierung von Zimmern und der Reservierungsanfragen</li>
-      <li>Verwaltung Ihres Aufenthalts im Hotel</li>
-      <li>Verbesserung und Optimierung unserer Leistungen</li>
-      <li>Beachtung der vor Ort geltenden Gesetzgebung (z.B. zur Aufbewahrung von Buchhaltungsbelegen)</li>
-    </ul>
-    <p>Die Rechtsgrundlage für die Datenverarbeitung sind Art. 6 Abs. 1 S. 1 lit. b, c und f DSGVO. Unser berechtigtes Interesse gemäß Art. 6 Abs. 1 S. 1 lit. f folgt aus oben aufgelisteten Zwecken zur Datenerhebung.</p>
-    
-    <h2>3. Weitergabe von Daten</h2>
-    <p>Eine Übermittlung Ihrer persönlichen Daten an Dritte zu anderen als den im Folgenden aufgeführten Zwecken findet nicht statt.</p>
-    <p>Wir geben Ihre persönlichen Daten nur an Dritte weiter, wenn:</p>
-    <ul>
-      <li>Sie Ihre nach Art. 6 Abs. 1 S. 1 lit. a DSGVO ausdrückliche Einwilligung dazu erteilt haben</li>
-      <li>Die Weitergabe nach Art. 6 Abs. 1 S. 1 lit. f DSGVO zur Abwicklung und Erfüllung unserer vertraglichen Verpflichtung Ihnen gegenüber erforderlich ist</li>
-      <li>Im Rahmen der Nutzung unseres Onlinebuchungstools (siehe Ziffer 5)</li>
-      <li>Für den Fall, dass für die Weitergabe nach Art. 6 Abs. 1 S. 1 lit. c DSGVO eine gesetzliche Verpflichtung besteht</li>
-      <li>Dies gesetzlich zulässig und nach Art. 6 Abs. 1 S. 1 lit. b DSGVO für die Abwicklung von Vertragsverhältnissen mit Ihnen erforderlich ist</li>
-    </ul>
-    <h2>4. Cookies</h2>
-    <p>Wir setzen auf unserer Seite Cookies ein. Hierbei handelt es sich um kleine Dateien, die Ihr Browser automatisch erstellt und die auf Ihrem Endgerät (Laptop, Tablet, Smartphone oder ähnlichem) gespeichert werden, wenn Sie unsere Seite besuchen. Cookies richten auf Ihrem Endgerät keinen Schaden an.</p>
-    <p>In dem Cookie werden Informationen abgelegt, die sich jeweils im Zusammenhang mit dem spezifisch eingesetzten Endgerät ergeben. Dies bedeutet jedoch nicht, dass wir dadurch unmittelbar Kenntnis von Ihrer Identität erhalten.</p>
-    <p>Der Einsatz von Cookies dient einerseits dazu, die Nutzung unseres Angebots für Sie angenehmer zu gestalten. So setzen wir sogenannte Session-Cookies ein, um zu erkennen, dass Sie einzelne Seiten unserer Website bereits besucht haben. Diese werden nach Verlassen unserer Seite automatisch gelöscht.</p>
-    <p>Darüber hinaus setzen wir ebenfalls zur Optimierung der Benutzerfreundlichkeit temporäre Cookies ein, die für einen bestimmten festgelegten Zeitraum auf Ihrem Endgerät gespeichert werden. Besuchen Sie unsere Seite erneut, um unsere Dienste in Anspruch zu nehmen, wird automatisch erkannt, dass Sie bereits bei uns waren und welche Eingaben und Einstellungen Sie getätigt haben, um diese nicht noch einmal eingeben zu müssen.</p>
-    <p>Zum anderen setzen wir Cookies ein, um die Nutzung unserer Website statistisch zu erfassen und zum Zwecke der Optimierung unseres Angebotes für Sie auszuwerten. Diese Cookies ermöglichen es uns, bei einem erneuten Besuch unserer Seite automatisch zu erkennen, dass Sie bereits bei uns waren. Diese Cookies werden nach einer jeweils definierten Zeit automatisch gelöscht.</p>
-    <p>Die durch Cookies verarbeiteten Daten sind für die genannten Zwecke zur Wahrung unserer berechtigten Interessen sowie der Dritter nach Artikel 6 Absatz 1 Satz 1 Buchstabe f DSGVO erforderlich.</p>
-    <p>Die meisten Browser akzeptieren Cookies automatisch. Sie können Ihren Browser jedoch so konfigurieren, dass keine Cookies auf Ihrem Computer gespeichert werden oder stets ein Hinweis erscheint, bevor ein neuer Cookie angelegt wird. Die vollständige Deaktivierung von Cookies kann jedoch dazu führen, dass Sie nicht alle Funktionen unserer Website nutzen können.</p>
-    
-    <h2>5. Reservierungs- und Buchungsfunktion</h2>
-    <p>Wir setzen auf unserer Webseite zur Reservierung und Buchung von Zimmern das Onlinebuchungstool „Littlehotelier“ der Firma SiteMinder, Vertriebsbüro Berlin Zimmerstraße 78, 10117 Berlin, Deutschland ein. Dieses Buchungssystems bedienen wir uns zur schnelleren und einfacheren Abwicklung der Zimmerbuchungen.</p>
-    <p>Starten Sie den Buchungsvorgang über unsere Webseite, so wird hierdurch eine Verbindung mit den Servern der oben genannten Firma aufgebaut. Die zur Buchung eingegebenen Daten werden bei Start des Buchungsvorganges an diesen Server übertragen, ebenso wie dann weiter eingegebene Daten.</p>
-    <p>Die maßgebliche Datenschutzerklärung der SiteMinder finden Sie unter <a href="https://www.siteminder.com" target="_blank">www.siteminder.com</a>.</p>
-    <h2>6. Analyse-Tools</h2>
+    <div class="text" style="max-width: 900px; margin: 0 auto; text-align: left;">
+      
+      <h3 style="color: var(--gold); margin-top: 2rem; margin-bottom: 1rem;">1. Name und Kontaktdaten des für die Verarbeitung Verantwortlichen</h3>
+      <p>Diese Datenschutz-Information gilt für die Datenverarbeitung durch:</p>
+      <p>
+        <strong>Verantwortlicher:</strong> Gastpark GmbH<br>
+        Weberstr. 5, 85077 Manching, Deutschland<br>
+        E-Mail: <a href="mailto:info@gastpark.de" style="color: var(--gold);">info@gastpark.de</a><br>
+        Tel: +49 (0)8459 - 3329577<br>
+        Fax: +49 (0)8459 - 3329578
+      </p>
+      
+      <h3 style="color: var(--gold); margin-top: 2rem; margin-bottom: 1rem;">2. Erhebung und Speicherung personenbezogener Daten sowie Art und Zweck von deren Verwendung</h3>
+      
+      <h4 style="color: #fff; margin-top: 1.5rem;">a) Beim Besuch der Website</h4>
+      <p>Beim Aufrufen unserer Website <a href="https://www.hotelgastpark.de" style="color: var(--gold);">www.hotelgastpark.de</a> werden durch den auf Ihrem Endgerät zum Einsatz kommenden Browser automatisch Informationen an den Server unserer Website gesendet. Diese Informationen werden temporär in einem sogenannten Logfile gespeichert. Folgende Informationen werden dabei ohne Ihr Zutun erfasst und bis zur automatisierten Löschung gespeichert:</p>
+      <ul style="text-align: left; margin-left: 1.5rem;">
+        <li>IP-Adresse des anfragenden Rechners</li>
+        <li>Datum und Uhrzeit des Zugriffs</li>
+        <li>Name und URL der abgerufenen Datei</li>
+        <li>Website, von der aus der Zugriff erfolgt (Referrer-URL)</li>
+        <li>Verwendeter Browser und ggf. das Betriebssystem Ihres Rechners sowie der Name Ihres Access-Providers</li>
+      </ul>
+      <p>Die genannten Daten werden durch uns zu folgenden Zwecken verarbeitet:</p>
+      <ul style="text-align: left; margin-left: 1.5rem;">
+        <li>Gewährleistung eines reibungslosen Verbindungsaufbaus der Website</li>
+        <li>Gewährleistung einer komfortablen Nutzung unserer Website</li>
+        <li>Auswertung der Systemsicherheit und -stabilität</li>
+        <li>Zu weiteren administrativen Zwecken</li>
+      </ul>
+      <p>Die Rechtsgrundlage für die Datenverarbeitung ist Art. 6 Abs. 1 S. 1 lit. f DSGVO. Unser berechtigtes Interesse folgt aus oben aufgelisteten Zwecken zur Datenerhebung. In keinem Fall verwenden wir die erhobenen Daten zu dem Zweck, Rückschlüsse auf Ihre Person zu ziehen.</p>
+      <p>Darüber hinaus setzen wir beim Besuch unserer Website Cookies sowie Analysedienste ein. Nähere Erläuterungen dazu erhalten Sie unter den Ziffern 4 und 6 dieser Datenschutzerklärung.</p>
+      
+      <h4 style="color: #fff; margin-top: 1.5rem;">b) Bei Nutzung unseres Kontaktformulars</h4>
+      <p>Bei Fragen jeglicher Art bieten wir Ihnen die Möglichkeit, mit uns über ein auf der Website bereitgestelltes Formular Kontakt aufzunehmen. Dabei ist die Angabe einer gültigen E-Mail-Adresse und eines Namens erforderlich, damit wir wissen, von wem die Anfrage stammt und um diese beantworten zu können. Weitere Angaben können freiwillig getätigt werden.</p>
+      <p>Die Datenverarbeitung zum Zwecke der Kontaktaufnahme mit uns erfolgt nach Art. 6 Abs. 1 S. 1 lit. a DSGVO auf Grundlage Ihrer freiwillig erteilten Einwilligung.</p>
+      <p>Die für die Benutzung des Kontaktformulars von uns erhobenen personenbezogenen Daten werden nach Erledigung der von Ihnen gestellten Anfrage automatisch gelöscht.</p>
+      
+      <h4 style="color: #fff; margin-top: 1.5rem;">c) Bei Buchung oder Reservierung eines Zimmers</h4>
+      <p>Bei Buchung oder Reservierung eines Zimmers erheben wir folgende Daten:</p>
+      <ul style="text-align: left; margin-left: 1.5rem;">
+        <li>Kontaktdaten (Nachname, Vorname, Telefonnummer, E-Mail usw.)</li>
+        <li>Persönliche Daten (Geburtsdatum, Staatsangehörigkeit usw.)</li>
+        <li>Angaben zu Ihren Kindern (Vornamen, Geburtsdatum, Alter usw.)</li>
+        <li>Ihre Kreditkartennummer (zu Transaktions- und Reservierungszwecken)</li>
+        <li>Ihr Ankunfts- und Abreisedatum</li>
+        <li>Ihre Vorlieben und Interessen (Raucher- oder Nichtraucherzimmer, bevorzugtes Stockwerk, Art der Aufbettung, Art der Zeitungen/Zeitschriften, Sport- oder kulturelle Interessen)</li>
+        <li>Ihre Fragen/Anmerkungen vor, während oder nach einem Aufenthalt in unserem Hotel</li>
+      </ul>
+      <p>Die genannten Daten werden durch uns zu folgenden Zwecken verarbeitet:</p>
+      <ul style="text-align: left; margin-left: 1.5rem;">
+        <li>Erfüllung unserer vertraglichen Verpflichtungen gegenüber Ihnen</li>
+        <li>Erstellung und Aufbewahrung gesetzlich vorgeschriebener Belege unter Beachtung von Bilanzierungsgrundsätzen</li>
+        <li>Management der Reservierung von Zimmern und der Reservierungsanfragen</li>
+        <li>Verwaltung Ihres Aufenthalts im Hotel</li>
+        <li>Verbesserung und Optimierung unserer Leistungen</li>
+        <li>Beachtung der vor Ort geltenden Gesetzgebung (z.B. zur Aufbewahrung von Buchhaltungsbelegen)</li>
+      </ul>
+      <p>Die Rechtsgrundlage für die Datenverarbeitung sind Art. 6 Abs. 1 S. 1 lit. b, c und f DSGVO. Unser berechtigtes Interesse gemäß Art. 6 Abs. 1 S. 1 lit. f folgt aus oben aufgelisteten Zwecken zur Datenerhebung.</p>
+      
+      <h3 style="color: var(--gold); margin-top: 2rem; margin-bottom: 1rem;">3. Weitergabe von Daten</h3>
+      <p>Eine Übermittlung Ihrer persönlichen Daten an Dritte zu anderen als den im Folgenden aufgeführten Zwecken findet nicht statt.</p>
+      <p>Wir geben Ihre persönlichen Daten nur an Dritte weiter, wenn:</p>
+      <ul style="text-align: left; margin-left: 1.5rem;">
+        <li>Sie Ihre nach Art. 6 Abs. 1 S. 1 lit. a DSGVO ausdrückliche Einwilligung dazu erteilt haben</li>
+        <li>Die Weitergabe nach Art. 6 Abs. 1 S. 1 lit. f DSGVO zur Abwicklung und Erfüllung unserer vertraglichen Verpflichtung Ihnen gegenüber erforderlich ist</li>
+        <li>Im Rahmen der Nutzung unseres Onlinebuchungstools (siehe Ziffer 5)</li>
+        <li>Für den Fall, dass für die Weitergabe nach Art. 6 Abs. 1 S. 1 lit. c DSGVO eine gesetzliche Verpflichtung besteht</li>
+        <li>Dies gesetzlich zulässig und nach Art. 6 Abs. 1 S. 1 lit. b DSGVO für die Abwicklung von Vertragsverhältnissen mit Ihnen erforderlich ist</li>
+      </ul>
 
-    <h3>a) Tracking-Tools</h3>
-    <p>Die im Folgenden aufgeführten und von uns eingesetzten Tracking-Maßnahmen werden auf Grundlage des Artikel 6 Absatz 1 Satz 1 Buchstabe f DSGVO durchgeführt. Mit den zum Einsatz kommenden Tracking-Maßnahmen wollen wir eine bedarfsgerechte Gestaltung und die fortlaufende Optimierung unserer Webseite sicherstellen. Zum anderen setzen wir die Tracking-Maßnahmen ein, um die Nutzung unserer Webseite statistisch zu erfassen und zum Zwecke der Optimierung unseres Angebotes für Sie auszuwerten. Diese Interessen sind als berechtigt im Sinne der vorgenannten Vorschrift anzusehen.</p>
-    
-    <h4>i) Google Adwords Conversion Tracking</h4>
-    <p>Um die Nutzung unserer Webseite statistisch zu erfassen und zum Zwecke der Optimierung unserer Website für Sie auszuwerten, nutzen wir ferner das Google Conversion Tracking. Dabei wird von Google Adwords ein Cookie (siehe Ziffer 4) auf Ihrem Rechner gesetzt, sofern Sie über eine Google-Anzeige auf unsere Webseite gelangt sind.</p>
-    <p>Diese Cookies verlieren nach 30 Tagen ihre Gültigkeit und dienen nicht der persönlichen Identifizierung. Besucht der Nutzer bestimmte Seiten der Webseite des Adwords-Kunden und das Cookie ist noch nicht abgelaufen, können Google und der Kunde erkennen, dass der Nutzer auf die Anzeige geklickt hat und zu dieser Seite weitergeleitet wurde.</p>
-    <p>Jeder Adwords-Kunde erhält ein anderes Cookie. Cookies können somit nicht über die Webseiten von Adwords-Kunden nachverfolgt werden. Die mithilfe des Conversion-Cookies eingeholten Informationen dienen dazu, Conversion-Statistiken für Adwords-Kunden zu erstellen, die sich für Conversion-Tracking entschieden haben. Die Adwords-Kunden erfahren die Gesamtanzahl der Nutzer, die auf ihre Anzeige geklickt haben und zu einer mit einem Conversion-Tracking-Tag versehenen Seite weitergeleitet wurden. Sie erhalten jedoch keine Informationen, mit denen sich Nutzer persönlich identifizieren lassen.</p>
-    <p>Wenn Sie nicht an dem Tracking-Verfahren teilnehmen möchten, können Sie das hierfür erforderliche Setzen eines Cookies ablehnen – etwa per Browser-Einstellung, die das automatische Setzen von Cookies generell deaktiviert. Sie können Cookies für Conversion-Tracking auch deaktivieren, indem Sie Ihren Browser so einstellen, dass Cookies von der Domain <code>www.googleadservices.com</code> blockiert werden. Googles Datenschutzbelehrung zum Conversion-Tracking finden Sie <a href="https://services.google.com/sitestats/de.html" target="_blank">hier</a>.</p>
-    
-    <h4>ii) Matomo (auch bekannt als PIWIK)</h4>
-    <p>Wir verwenden die Open-Source-Software Matomo zur Analyse und statistischen Auswertung der Nutzung der Website. Hierzu werden Cookies eingesetzt (siehe Ziffer 4). Die durch den Cookie erzeugten Informationen über die Websitenutzung werden an unsere Server übertragen und in pseudonymen Nutzungsprofilen zusammengefasst. Die Informationen werden verwendet, um die Nutzung der Website auszuwerten und um eine bedarfsgerechte Gestaltung unserer Website zu ermöglichen. Eine Weitergabe der Informationen an Dritte erfolgt nicht.</p>
-    <p>Es wird in keinem Fall die IP-Adresse mit anderen den Nutzer betreffenden Daten in Verbindung gebracht. Die IP-Adressen werden anonymisiert, so dass eine Zuordnung nicht möglich ist (IP-Masking).</p>
-    <p>Ihr Besuch dieser Webseite wird aktuell von der Matomo Webanalyse erfasst. Klicken Sie <a href="https://matomo.org/docs/privacy/" target="_blank">hier</a>, damit Ihr Besuch nicht mehr erfasst wird.</p>
-    
-    <h2>7. Social Media Plug-ins</h2>
-    <p>Wir setzen auf unserer Website auf Grundlage des Artikel 6 Absatz 1 Satz 1 Buchstabe f DSGVO Social Plug-ins des sozialen Netzwerks Instagram ein, um unser Unternehmen hierüber bekannter zu machen. Der dahinterstehende werbliche Zweck ist als berechtigtes Interesse im Sinne der DSGVO anzusehen. Die Verantwortung für den datenschutzkonformen Betrieb ist durch deren jeweiligen Anbieter zu gewährleisten. Die Einbindung dieser Plug-ins durch uns erfolgt im Wege der sogenannten Zwei-Klick-Methode um Besucher unserer Webseite bestmöglich zu schützen.</p>
-    
-    <h3>a) Instagram</h3>
-    <p>Auf unserer Website werden auch sogenannte Social Plugins („Plugins“) von Instagram verwendet, das von der Instagram LLC., 1601 Willow Road, Menlo Park, CA 94025, USA betrieben wird.</p>
-    <p>Die Plugins sind mit einem Instagram-Logo beispielsweise in Form einer „Instagram-Kamera“ gekennzeichnet.</p>
-    <p>Wenn Sie eine Seite unseres Webauftritts aufrufen, die ein solches Plugin enthält, stellt Ihr Browser eine direkte Verbindung zu den Servern von Instagram her. Der Inhalt des Plugins wird von Instagram direkt an Ihren Browser übermittelt und in die Seite eingebunden. Durch diese Einbindung erhält Instagram die Information, dass Ihr Browser die entsprechende Seite unseres Webauftritts aufgerufen hat, auch wenn Sie kein Instagram-Profil besitzen oder gerade nicht bei Instagram eingeloggt sind.</p>
-    <p>Diese Information (einschließlich Ihrer IP-Adresse) wird von Ihrem Browser direkt an einen Server von Instagram in die USA übermittelt und dort gespeichert. Sind Sie bei Instagram eingeloggt, kann Instagram den Besuch unserer Website Ihrem Instagram-Account unmittelbar zuordnen. Wenn Sie mit den Plugins interagieren, zum Beispiel das „Instagram“-Button betätigen, wird diese Information ebenfalls direkt an einen Server von Instagram übermittelt und dort gespeichert. Die Informationen werden außerdem auf Ihrem Instagram-Account veröffentlicht und dort Ihren Kontakten angezeigt.</p>
-    <p>Wenn Sie nicht möchten, dass Instagram die über unseren Webauftritt gesammelten Daten unmittelbar Ihrem Instagram-Account zuordnet, müssen Sie sich vor Ihrem Besuch unserer Website bei Instagram ausloggen.</p>
-    <p>Weitere Informationen hierzu finden Sie in der Datenschutzerklärung von Instagram unter <a href="https://help.instagram.com/155833707900388" target="_blank">https://help.instagram.com/155833707900388</a>.</p>
-    
-    <h2>8. Betroffenenrechte</h2>
-    <p>Sie haben das Recht:</p>
-    <ul>
-      <li>gemäß Artikel 15 DSGVO Auskunft über Ihre von uns verarbeiteten personenbezogenen Daten zu verlangen,</li>
-      <li>gemäß Artikel 16 DSGVO unverzüglich die Berichtigung unrichtiger oder Vervollständigung Ihrer bei uns gespeicherten personenbezogenen Daten zu verlangen,</li>
-      <li>gemäß Artikel 17 DSGVO die Löschung Ihrer bei uns gespeicherten personenbezogenen Daten zu verlangen,</li>
-      <li>gemäß Artikel 18 DSGVO die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen,</li>
-      <li>gemäß Artikel 20 DSGVO Ihre personenbezogenen Daten in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten,</li>
-      <li>gemäß Artikel 7 Absatz 3 DSGVO Ihre einmal erteilte Einwilligung jederzeit zu widerrufen,</li>
-      <li>gemäß Artikel 77 DSGVO sich bei einer Aufsichtsbehörde zu beschweren.</li>
-    </ul>
-    
-    <h2>9. Widerspruchsrecht</h2>
-    <p>Sofern Ihre personenbezogenen Daten auf Grundlage von berechtigten Interessen gemäß Artikel 6 Absatz 1 Satz 1 Buchstabe f DSGVO verarbeitet werden, haben Sie das Recht, gemäß Artikel 21 DSGVO Widerspruch gegen die Verarbeitung Ihrer personenbezogenen Daten einzulegen.</p>
-    <p>Möchten Sie von Ihrem Widerrufs- oder Widerspruchsrecht Gebrauch machen, genügt eine E-Mail an <a href="mailto:info@gastpark.de">info@gastpark.de</a>.</p>
-    
-    <h2>10. Datensicherheit</h2>
-    <p>Wir verwenden innerhalb des Website-Besuchs das verbreitete SSL-Verfahren (Secure Socket Layer) in Verbindung mit der jeweils höchsten Verschlüsselungsstufe, die von Ihrem Browser unterstützt wird.</p>
-    <p>Wir bedienen uns geeigneter technischer und organisatorischer Sicherheitsmaßnahmen, um Ihre Daten gegen zufällige oder vorsätzliche Manipulationen, teilweisen oder vollständigen Verlust, Zerstörung oder gegen den unbefugten Zugriff Dritter zu schützen.</p>
-    
-    <h2>11. Aktualität und Änderung dieser Datenschutzerklärung</h2>
-    <p>Diese Datenschutzerklärung ist aktuell gültig und hat den Stand Mai 2018.</p>
-    <p>Durch die Weiterentwicklung unserer Website und Angebote darüber oder aufgrund geänderter gesetzlicher beziehungsweise behördlicher Vorgaben kann es notwendig werden, diese Datenschutzerklärung zu ändern. Die jeweils aktuelle Datenschutzerklärung kann jederzeit auf der Website unter <a href="https://www.gastparkhotel.de/datenschutz.html" target="_blank">www.gastparkhotel.de/datenschutz.html</a> von Ihnen abgerufen und ausgedruckt werden.</p>
-    
-  </main>
+      <h3 style="color: var(--gold); margin-top: 2rem; margin-bottom: 1rem;">4. Cookies</h3>
+      <p>Wir setzen auf unserer Seite Cookies ein. Hierbei handelt es sich um kleine Dateien, die Ihr Browser automatisch erstellt und die auf Ihrem Endgerät (Laptop, Tablet, Smartphone oder ähnlichem) gespeichert werden, wenn Sie unsere Seite besuchen. Cookies richten auf Ihrem Endgerät keinen Schaden an.</p>
+      <p>In dem Cookie werden Informationen abgelegt, die sich jeweils im Zusammenhang mit dem spezifisch eingesetzten Endgerät ergeben. Dies bedeutet jedoch nicht, dass wir dadurch unmittelbar Kenntnis von Ihrer Identität erhalten.</p>
+      <p>Der Einsatz von Cookies dient einerseits dazu, die Nutzung unseres Angebots für Sie angenehmer zu gestalten. So setzen wir sogenannte Session-Cookies ein, um zu erkennen, dass Sie einzelne Seiten unserer Website bereits besucht haben. Diese werden nach Verlassen unserer Seite automatisch gelöscht.</p>
+      <p>Darüber hinaus setzen wir ebenfalls zur Optimierung der Benutzerfreundlichkeit temporäre Cookies ein, die für einen bestimmten festgelegten Zeitraum auf Ihrem Endgerät gespeichert werden. Besuchen Sie unsere Seite erneut, um unsere Dienste in Anspruch zu nehmen, wird automatisch erkannt, dass Sie bereits bei uns waren und welche Eingaben und Einstellungen Sie getätigt haben, um diese nicht noch einmal eingeben zu müssen.</p>
+      <p>Zum anderen setzen wir Cookies ein, um die Nutzung unserer Website statistisch zu erfassen und zum Zwecke der Optimierung unseres Angebotes für Sie auszuwerten. Diese Cookies ermöglichen es uns, bei einem erneuten Besuch unserer Seite automatisch zu erkennen, dass Sie bereits bei uns waren. Diese Cookies werden nach einer jeweils definierten Zeit automatisch gelöscht.</p>
+      <p>Die durch Cookies verarbeiteten Daten sind für die genannten Zwecke zur Wahrung unserer berechtigten Interessen sowie der Dritter nach Artikel 6 Absatz 1 Satz 1 Buchstabe f DSGVO erforderlich.</p>
+      <p>Die meisten Browser akzeptieren Cookies automatisch. Sie können Ihren Browser jedoch so konfigurieren, dass keine Cookies auf Ihrem Computer gespeichert werden oder stets ein Hinweis erscheint, bevor ein neuer Cookie angelegt wird. Die vollständige Deaktivierung von Cookies kann jedoch dazu führen, dass Sie nicht alle Funktionen unserer Website nutzen können.</p>
+      
+      <h3 style="color: var(--gold); margin-top: 2rem; margin-bottom: 1rem;">5. Reservierungs- und Buchungsfunktion</h3>
+      <p>Wir setzen auf unserer Webseite zur Reservierung und Buchung von Zimmern das Onlinebuchungstool „Littlehotelier" der Firma SiteMinder, Vertriebsbüro Berlin Zimmerstraße 78, 10117 Berlin, Deutschland ein. Dieses Buchungssystems bedienen wir uns zur schnelleren und einfacheren Abwicklung der Zimmerbuchungen.</p>
+      <p>Starten Sie den Buchungsvorgang über unsere Webseite, so wird hierdurch eine Verbindung mit den Servern der oben genannten Firma aufgebaut. Die zur Buchung eingegebenen Daten werden bei Start des Buchungsvorganges an diesen Server übertragen, ebenso wie dann weiter eingegebene Daten.</p>
+      <p>Die maßgebliche Datenschutzerklärung der SiteMinder finden Sie unter <a href="https://www.siteminder.com" target="_blank" style="color: var(--gold);">www.siteminder.com</a>.</p>
 
-  <footer>
-    <nav class="footer-nav">
-      <a href="index.html">Start</a>
-      <a href="uber-uns.html">Über uns</a>
-      <a href="kontakt.html">Kontakt</a>
-      <a href="impressum.html">Impressum</a>
-      <a href="datenschutzerklärung.html">Datenschutz</a>
+      <h3 style="color: var(--gold); margin-top: 2rem; margin-bottom: 1rem;">6. Analyse-Tools</h3>
+
+      <h4 style="color: #fff; margin-top: 1.5rem;">a) Tracking-Tools</h4>
+      <p>Die im Folgenden aufgeführten und von uns eingesetzten Tracking-Maßnahmen werden auf Grundlage des Artikel 6 Absatz 1 Satz 1 Buchstabe f DSGVO durchgeführt. Mit den zum Einsatz kommenden Tracking-Maßnahmen wollen wir eine bedarfsgerechte Gestaltung und die fortlaufende Optimierung unserer Webseite sicherstellen. Zum anderen setzen wir die Tracking-Maßnahmen ein, um die Nutzung unserer Webseite statistisch zu erfassen und zum Zwecke der Optimierung unseres Angebotes für Sie auszuwerten. Diese Interessen sind als berechtigt im Sinne der vorgenannten Vorschrift anzusehen.</p>
+      
+      <h4 style="color: #fff; margin-top: 1.5rem;">i) Google Adwords Conversion Tracking</h4>
+      <p>Um die Nutzung unserer Webseite statistisch zu erfassen und zum Zwecke der Optimierung unserer Website für Sie auszuwerten, nutzen wir ferner das Google Conversion Tracking. Dabei wird von Google Adwords ein Cookie (siehe Ziffer 4) auf Ihrem Rechner gesetzt, sofern Sie über eine Google-Anzeige auf unsere Webseite gelangt sind.</p>
+      <p>Diese Cookies verlieren nach 30 Tagen ihre Gültigkeit und dienen nicht der persönlichen Identifizierung. Besucht der Nutzer bestimmte Seiten der Webseite des Adwords-Kunden und das Cookie ist noch nicht abgelaufen, können Google und der Kunde erkennen, dass der Nutzer auf die Anzeige geklickt hat und zu dieser Seite weitergeleitet wurde.</p>
+      <p>Jeder Adwords-Kunde erhält ein anderes Cookie. Cookies können somit nicht über die Webseiten von Adwords-Kunden nachverfolgt werden. Die mithilfe des Conversion-Cookies eingeholten Informationen dienen dazu, Conversion-Statistiken für Adwords-Kunden zu erstellen, die sich für Conversion-Tracking entschieden haben. Die Adwords-Kunden erfahren die Gesamtanzahl der Nutzer, die auf ihre Anzeige geklickt haben und zu einer mit einem Conversion-Tracking-Tag versehenen Seite weitergeleitet wurden. Sie erhalten jedoch keine Informationen, mit denen sich Nutzer persönlich identifizieren lassen.</p>
+      <p>Wenn Sie nicht an dem Tracking-Verfahren teilnehmen möchten, können Sie das hierfür erforderliche Setzen eines Cookies ablehnen – etwa per Browser-Einstellung, die das automatische Setzen von Cookies generell deaktiviert. Sie können Cookies für Conversion-Tracking auch deaktivieren, indem Sie Ihren Browser so einstellen, dass Cookies von der Domain <code>www.googleadservices.com</code> blockiert werden. Googles Datenschutzbelehrung zum Conversion-Tracking finden Sie <a href="https://services.google.com/sitestats/de.html" target="_blank" style="color: var(--gold);">hier</a>.</p>
+      
+      <h4 style="color: #fff; margin-top: 1.5rem;">ii) Matomo (auch bekannt als PIWIK)</h4>
+      <p>Wir verwenden die Open-Source-Software Matomo zur Analyse und statistischen Auswertung der Nutzung der Website. Hierzu werden Cookies eingesetzt (siehe Ziffer 4). Die durch den Cookie erzeugten Informationen über die Websitenutzung werden an unsere Server übertragen und in pseudonymen Nutzungsprofilen zusammengefasst. Die Informationen werden verwendet, um die Nutzung der Website auszuwerten und um eine bedarfsgerechte Gestaltung unserer Website zu ermöglichen. Eine Weitergabe der Informationen an Dritte erfolgt nicht.</p>
+      <p>Es wird in keinem Fall die IP-Adresse mit anderen den Nutzer betreffenden Daten in Verbindung gebracht. Die IP-Adressen werden anonymisiert, so dass eine Zuordnung nicht möglich ist (IP-Masking).</p>
+      <p>Ihr Besuch dieser Webseite wird aktuell von der Matomo Webanalyse erfasst. Klicken Sie <a href="https://matomo.org/docs/privacy/" target="_blank" style="color: var(--gold);">hier</a>, damit Ihr Besuch nicht mehr erfasst wird.</p>
+      
+      <h3 style="color: var(--gold); margin-top: 2rem; margin-bottom: 1rem;">7. Social Media Plug-ins</h3>
+      <p>Wir setzen auf unserer Website auf Grundlage des Artikel 6 Absatz 1 Satz 1 Buchstabe f DSGVO Social Plug-ins des sozialen Netzwerks Instagram ein, um unser Unternehmen hierüber bekannter zu machen. Der dahinterstehende werbliche Zweck ist als berechtigtes Interesse im Sinne der DSGVO anzusehen. Die Verantwortung für den datenschutzkonformen Betrieb ist durch deren jeweiligen Anbieter zu gewährleisten. Die Einbindung dieser Plug-ins durch uns erfolgt im Wege der sogenannten Zwei-Klick-Methode um Besucher unserer Webseite bestmöglich zu schützen.</p>
+      
+      <h4 style="color: #fff; margin-top: 1.5rem;">a) Instagram</h4>
+      <p>Auf unserer Website werden auch sogenannte Social Plugins („Plugins") von Instagram verwendet, das von der Instagram LLC., 1601 Willow Road, Menlo Park, CA 94025, USA betrieben wird.</p>
+      <p>Die Plugins sind mit einem Instagram-Logo beispielsweise in Form einer „Instagram-Kamera" gekennzeichnet.</p>
+      <p>Wenn Sie eine Seite unseres Webauftritts aufrufen, die ein solches Plugin enthält, stellt Ihr Browser eine direkte Verbindung zu den Servern von Instagram her. Der Inhalt des Plugins wird von Instagram direkt an Ihren Browser übermittelt und in die Seite eingebunden. Durch diese Einbindung erhält Instagram die Information, dass Ihr Browser die entsprechende Seite unseres Webauftritts aufgerufen hat, auch wenn Sie kein Instagram-Profil besitzen oder gerade nicht bei Instagram eingeloggt sind.</p>
+      <p>Diese Information (einschließlich Ihrer IP-Adresse) wird von Ihrem Browser direkt an einen Server von Instagram in die USA übermittelt und dort gespeichert. Sind Sie bei Instagram eingeloggt, kann Instagram den Besuch unserer Website Ihrem Instagram-Account unmittelbar zuordnen. Wenn Sie mit den Plugins interagieren, zum Beispiel das „Instagram"-Button betätigen, wird diese Information ebenfalls direkt an einen Server von Instagram übermittelt und dort gespeichert. Die Informationen werden außerdem auf Ihrem Instagram-Account veröffentlicht und dort Ihren Kontakten angezeigt.</p>
+      <p>Wenn Sie nicht möchten, dass Instagram die über unseren Webauftritt gesammelten Daten unmittelbar Ihrem Instagram-Account zuordnet, müssen Sie sich vor Ihrem Besuch unserer Website bei Instagram ausloggen.</p>
+      <p>Weitere Informationen hierzu finden Sie in der Datenschutzerklärung von Instagram unter <a href="https://help.instagram.com/155833707900388" target="_blank" style="color: var(--gold);">https://help.instagram.com/155833707900388</a>.</p>
+      
+      <h3 style="color: var(--gold); margin-top: 2rem; margin-bottom: 1rem;">8. Betroffenenrechte</h3>
+      <p>Sie haben das Recht:</p>
+      <ul style="text-align: left; margin-left: 1.5rem;">
+        <li>gemäß Artikel 15 DSGVO Auskunft über Ihre von uns verarbeiteten personenbezogenen Daten zu verlangen,</li>
+        <li>gemäß Artikel 16 DSGVO unverzüglich die Berichtigung unrichtiger oder Vervollständigung Ihrer bei uns gespeicherten personenbezogenen Daten zu verlangen,</li>
+        <li>gemäß Artikel 17 DSGVO die Löschung Ihrer bei uns gespeicherten personenbezogenen Daten zu verlangen,</li>
+        <li>gemäß Artikel 18 DSGVO die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen,</li>
+        <li>gemäß Artikel 20 DSGVO Ihre personenbezogenen Daten in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten,</li>
+        <li>gemäß Artikel 7 Absatz 3 DSGVO Ihre einmal erteilte Einwilligung jederzeit zu widerrufen,</li>
+        <li>gemäß Artikel 77 DSGVO sich bei einer Aufsichtsbehörde zu beschweren.</li>
+      </ul>
+      
+      <h3 style="color: var(--gold); margin-top: 2rem; margin-bottom: 1rem;">9. Widerspruchsrecht</h3>
+      <p>Sofern Ihre personenbezogenen Daten auf Grundlage von berechtigten Interessen gemäß Artikel 6 Absatz 1 Satz 1 Buchstabe f DSGVO verarbeitet werden, haben Sie das Recht, gemäß Artikel 21 DSGVO Widerspruch gegen die Verarbeitung Ihrer personenbezogenen Daten einzulegen.</p>
+      <p>Möchten Sie von Ihrem Widerrufs- oder Widerspruchsrecht Gebrauch machen, genügt eine E-Mail an <a href="mailto:info@gastpark.de" style="color: var(--gold);">info@gastpark.de</a>.</p>
+      
+      <h3 style="color: var(--gold); margin-top: 2rem; margin-bottom: 1rem;">10. Datensicherheit</h3>
+      <p>Wir verwenden innerhalb des Website-Besuchs das verbreitete SSL-Verfahren (Secure Socket Layer) in Verbindung mit der jeweils höchsten Verschlüsselungsstufe, die von Ihrem Browser unterstützt wird.</p>
+      <p>Wir bedienen uns geeigneter technischer und organisatorischer Sicherheitsmaßnahmen, um Ihre Daten gegen zufällige oder vorsätzliche Manipulationen, teilweisen oder vollständigen Verlust, Zerstörung oder gegen den unbefugten Zugriff Dritter zu schützen.</p>
+      
+      <h3 style="color: var(--gold); margin-top: 2rem; margin-bottom: 1rem;">11. Aktualität und Änderung dieser Datenschutzerklärung</h3>
+      <p>Diese Datenschutzerklärung ist aktuell gültig und hat den Stand Mai 2018.</p>
+      <p>Durch die Weiterentwicklung unserer Website und Angebote darüber oder aufgrund geänderter gesetzlicher beziehungsweise behördlicher Vorgaben kann es notwendig werden, diese Datenschutzerklärung zu ändern. Die jeweils aktuelle Datenschutzerklärung kann jederzeit auf der Website unter <a href="https://www.gastparkhotel.de/datenschutz.html" target="_blank" style="color: var(--gold);">www.gastparkhotel.de/datenschutz.html</a> von Ihnen abgerufen und ausgedruckt werden.</p>
+      
+    </div>
+  </section>
+
+  <!-- Footer Navigation -->
+  <div class="header-flex">
+    <nav aria-label="Fußnavigation">
+      <ul>
+        <li><a href="index.html">Start</a></li>
+        <li><a href="uber-uns.html">Über uns</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="impressum.html">Impressum</a></li>
+        <li><a href="datenschutzerklärung.html">Datenschutz</a></li>
+      </ul>
     </nav>
-    <img src="images/image14.jpeg" alt="Footer Logo" class="logo-img-footer" />
-    <p>&copy; 2025 Gastpark Hotel. Alle Rechte vorbehalten.</p>
-  </footer>
+
+    <img src="images/image14.jpeg" alt="Gastpark Hotel Logo" class="logo-img">
+  </div>
+  
+  <script src="menu.js"></script>
 
 </body>
 </html>

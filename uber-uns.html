@@ -1,72 +1,27 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Über uns - Gastpark Hotel</title>
+  <meta charset="utf-8" />
+  <title>Über uns – Gastpark Hotel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Lernen Sie das Gastpark Hotel in Manching kennen. Familiengeführtes Hotel mit Tradition und erstklassigem Service." />
+
+  <!-- Webfont -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Externes Stylesheet -->
+  <link rel="stylesheet" href="style.css?v=2.0" />
+  
   <style>
-    body {
-      background-color: #000;
-      color: #fff;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-
-    header {
-      padding: 2cm 1rem 2cm;
-    }
-
-    .logo-img-header {
-      max-width: 300px;
-      height: auto;
-    }
-
-    .custom-nav {
-      padding-top: 3cm;
-    }
-
-    .custom-nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 2rem;
-    }
-
-    .custom-nav a {
-      text-decoration: none;
-      color: #d1bc8a;
-      border: 2px solid #fff;
-      padding: 0.5rem 1rem;
-      border-radius: 6px;
-      transition: all 0.3s ease;
-    }
-
-    .custom-nav a:hover {
-      background-color: #fff;
-      color: #000;
-      border-color: #d1bc8a;
-    }
-
-    main {
-      padding: 2rem;
-      max-width: 960px;
-      margin: auto;
-    }
-
-    h1 {
-      margin-bottom: 3cm;
-    }
-
+    /* Slideshow Styles */
     .slideshow-container {
       position: relative;
       width: 100%;
-      max-width: 600px;
-      margin: 0 auto 2rem;
+      max-width: 800px;
+      margin: 3rem auto;
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(0,0,0,.25);
     }
 
     .slide {
@@ -74,152 +29,194 @@
       width: 100%;
     }
 
+    .slide.active {
+      display: block;
+    }
+
     .slide img {
       width: 100%;
-      border-radius: 6px;
+      height: auto;
+      display: block;
     }
 
-    footer {
-      background-color: #000;
-      color: #fff;
+    /* Navigation Dots */
+    .slideshow-dots {
       text-align: center;
-      padding: 2cm 1rem;
+      padding: 1.5rem 0;
     }
 
-    .footer-nav a {
-      color: #fff;
-      margin: 0 1rem;
-      text-decoration: none;
+    .dot {
+      height: 12px;
+      width: 12px;
+      margin: 0 6px;
+      background-color: rgba(255,255,255,0.3);
+      border-radius: 50%;
+      display: inline-block;
+      cursor: pointer;
+      transition: .3s;
     }
 
-    .logo-img-footer {
-      max-width: 200px;
-      margin-top: 2rem;
+    .dot.active {
+      background-color: var(--gold);
+    }
+
+    .dot:hover {
+      background-color: rgba(255,255,255,0.6);
     }
   </style>
 </head>
-<body>
-    <div id="root">
-        <div style="background-color:#000000; color:#ffffff; display: flex; justify-content: center; align-items: center; height: 200px; padding-top: 40px;">
-            <a href="/" class="logo-link">
-              <img decoding="async"
-                   src="images/image01.jpeg"
-                   srcset="images/image01.jpeg 1x"
-                   sizes="100vw"
-                   class="image-img image-geometry-rectangle-1 no-aspect-ratio"
-                   data-shape="rectangle"
-                   alt="Hotel Logo"
-                   style="max-width: 100%; height: auto;" />
-            </a>
-          </div>
-      </div>
-      <style>
-        .custom-nav a {
-          text-decoration: none;
-          color: #d1bc8a;
-          border: 2px solid #fff;
-          padding: 0.5rem 1rem;
-          border-radius: 6px;
-          transition: all 0.3s ease;
-        }
-      
-        .custom-nav a:hover {
-          background-color: #fff;
-          color: #000;
-          border-color: #d1bc8a;
-        }
-      </style>
-      
-      <nav class="custom-nav" style="padding-top: 2cm;">
-        <ul style="list-style: none; margin: 0; padding: 0; display: flex; justify-content: center; gap: 2rem;">
-          <li><a href="index.html">Start</a></li>
-          <li><a href="uber-uns.html">Über uns</a></li>
-          <li><a href="kontakt.html">Kontakt</a></li>
-          <li><a href="impressum.html">Impressum</a></li>
-          <li><a href="datenschutzerklärung.html">Datenschutz</a></li>
-        </ul>
-      </nav>
 
-  <main>
-    <div style="padding-top: 2cm;">
-        <!-- Dein Inhalt hier -->
-      </div>      
-      <h1 style="color: #d1bc8a;">Über uns</h1> <!-- ✅ richtig -->
-    <p>Herzlich willkommen im Gastpark Hotel – Ihrem Wohlfühlort in Manching.</p>
-    <p>Seit vielen Jahren steht unser familiengeführtes Hotel für Gastfreundschaft, Komfort und erstklassigen Service. Unsere Philosophie ist es, jedem Gast einen angenehmen und unvergesslichen Aufenthalt zu bieten.</p>
-    <p>Unsere modern eingerichteten Zimmer, das umfangreiche Frühstücksangebot und die zentrale Lage machen unser Haus sowohl für Geschäftsreisende als auch Urlauber zur idealen Unterkunft.</p>
-    <p>Wir freuen uns darauf, Sie bald persönlich bei uns begrüßen zu dürfen.</p>
-    <div style="padding-top: 1cm;">
-        <!-- Dein Inhalt hier -->
-      </div>      
+<body>
+
+  <!-- Top Logo -->
+  <div class="topbar">
+    <a href="index.html">
+      <img src="images/image01.jpeg" alt="Gastpark Hotel Logo">
+    </a>
+  </div>
+
+  
+  <nav class="nav" aria-label="Hauptnavigation">
+    <div class="container nav-inner">
+      <button id="navToggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="navMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+  
+      <ul id="navMenu">
+        <li><a href="index.html">Start</a></li>
+        <li><a href="uber-uns.html">Über uns</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="impressum.html">Impressum</a></li>
+        <li><a href="datenschutzerklärung.html">Datenschutz</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Über uns Content -->
+  <section class="section container sp-6">
+    <h2>Über uns</h2>
+
+    <div class="text">
+      <p>Herzlich willkommen im Gastpark Hotel – Ihrem Wohlfühlort in Manching.</p>
+      
+      <p>Seit vielen Jahren steht unser familiengeführtes Hotel für Gastfreundschaft, Komfort und erstklassigen Service. Unsere Philosophie ist es, jedem Gast einen angenehmen und unvergesslichen Aufenthalt zu bieten.</p>
+      
+      <p>Unsere modern eingerichteten Zimmer, das umfangreiche Frühstücksangebot und die zentrale Lage machen unser Haus sowohl für Geschäftsreisende als auch Urlauber zur idealen Unterkunft.</p>
+      
+      <p>Wir freuen uns darauf, Sie bald persönlich bei uns begrüßen zu dürfen.</p>
+    </div>
+  </section>
+
+  <!-- Slideshow -->
+  <section class="section container">
     <div class="slideshow-container">
       <!-- PNG Bilder 07-14 -->
-      <div class="slide"><img src="images/image07.png" alt="Bild 7"></div>
-      <div class="slide"><img src="images/image08.png" alt="Bild 8"></div>
-      <div class="slide"><img src="images/image09.png" alt="Bild 9"></div>
-      <div class="slide"><img src="images/image10.png" alt="Bild 10"></div>
-      <div class="slide"><img src="images/image11.png" alt="Bild 11"></div>
-      <div class="slide"><img src="images/image12.png" alt="Bild 12"></div>
-      <div class="slide"><img src="images/image13.png" alt="Bild 13"></div>
-      <div class="slide"><img src="images/image14.png" alt="Bild 14"></div>
+      <div class="slide"><img src="images/image07.png" alt="Veranstaltungssaal"></div>
+      <div class="slide"><img src="images/image08.png" alt="Veranstaltungssaal"></div>
+      <div class="slide"><img src="images/image09.png" alt="Veranstaltungssaal"></div>
+      <div class="slide"><img src="images/image10.png" alt="Veranstaltungssaal"></div>
+      <div class="slide"><img src="images/image11.png" alt="Veranstaltungssaal"></div>
+      <div class="slide"><img src="images/image12.png" alt="Veranstaltungssaal"></div>
+      <div class="slide"><img src="images/image13.png" alt="Veranstaltungssaal"></div>
+      <div class="slide"><img src="images/image14.png" alt="Veranstaltungssaal"></div>
 
       <!-- JPEG Bilder 15-42 -->
-      <div class="slide"><img src="images/image15.jpeg" alt="Bild 15"></div>
-      <div class="slide"><img src="images/image16.jpeg" alt="Bild 16"></div>
-      <div class="slide"><img src="images/image17.jpeg" alt="Bild 17"></div>
-      <div class="slide"><img src="images/image18.jpeg" alt="Bild 18"></div>
-      <div class="slide"><img src="images/image19.jpeg" alt="Bild 19"></div>
-      <div class="slide"><img src="images/image20.jpeg" alt="Bild 20"></div>
-      <div class="slide"><img src="images/image21.jpeg" alt="Bild 21"></div>
-      <div class="slide"><img src="images/image22.jpeg" alt="Bild 22"></div>
-      <div class="slide"><img src="images/image23.jpeg" alt="Bild 23"></div>
-      <div class="slide"><img src="images/image24.jpeg" alt="Bild 24"></div>
-      <div class="slide"><img src="images/image25.jpeg" alt="Bild 25"></div>
-      <div class="slide"><img src="images/image26.jpeg" alt="Bild 26"></div>
-      <div class="slide"><img src="images/image27.jpeg" alt="Bild 27"></div>
-      <div class="slide"><img src="images/image28.jpeg" alt="Bild 28"></div>
-      <div class="slide"><img src="images/image29.jpeg" alt="Bild 29"></div>
-      <div class="slide"><img src="images/image30.jpeg" alt="Bild 30"></div>
-      <div class="slide"><img src="images/image31.jpeg" alt="Bild 31"></div>
-      <div class="slide"><img src="images/image32.jpeg" alt="Bild 32"></div>
-      <div class="slide"><img src="images/image33.jpeg" alt="Bild 33"></div>
-      <div class="slide"><img src="images/image34.jpeg" alt="Bild 34"></div>
-      <div class="slide"><img src="images/image35.jpeg" alt="Bild 35"></div>
-      <div class="slide"><img src="images/image36.jpeg" alt="Bild 36"></div>
-      <div class="slide"><img src="images/image37.jpeg" alt="Bild 37"></div>
-      <div class="slide"><img src="images/image38.jpeg" alt="Bild 38"></div>
-      <div class="slide"><img src="images/image39.jpeg" alt="Bild 39"></div>
-      <div class="slide"><img src="images/image40.jpeg" alt="Bild 40"></div>
-      <div class="slide"><img src="images/image41.jpeg" alt="Bild 41"></div>
-      <div class="slide"><img src="images/image42.jpeg" alt="Bild 42"></div>
+      <div class="slide"><img src="images/image15.jpeg" alt="Hotel Impression"></div>
+      <div class="slide"><img src="images/image16.jpeg" alt="Hotel Impression"></div>
+      <div class="slide"><img src="images/image17.jpeg" alt="Hotel Impression"></div>
+      <div class="slide"><img src="images/image18.jpeg" alt="Hotel Impression"></div>
+      <div class="slide"><img src="images/image19.jpeg" alt="Hotel Impression"></div>
+      <div class="slide"><img src="images/image20.jpeg" alt="Hotel Impression"></div>
+      <div class="slide"><img src="images/image21.jpeg" alt="Hotel Impression"></div>
+      <div class="slide"><img src="images/image22.jpeg" alt="Hotel Impression"></div>
+      <div class="slide"><img src="images/image23.jpeg" alt="Hotel Impression"></div>
+      <div class="slide"><img src="images/image24.jpeg" alt="Hotel Impression"></div>
+      <div class="slide"><img src="images/image25.jpeg" alt="Hotel Impression"></div>
+      <div class="slide"><img src="images/image26.jpeg" alt="Hotel Impression"></div>
+      <div class="slide"><img src="images/image27.jpeg" alt="Hotel Impression"></div>
+      <div class="slide"><img src="images/image28.jpeg" alt="Hotel Impression"></div>
+      <div class="slide"><img src="images/image29.jpeg" alt="Hotel Impression"></div>
+      <div class="slide"><img src="images/image30.jpeg" alt="Hotel Impression"></div>
+      <div class="slide"><img src="images/image31.jpeg" alt="Hotel Impression"></div>
+      <div class="slide"><img src="images/image32.jpeg" alt="Hotel Impression"></div>
+      <div class="slide"><img src="images/image33.jpeg" alt="Hotel Impression"></div>
+      <div class="slide"><img src="images/image34.jpeg" alt="Hotel Impression"></div>
+      <div class="slide"><img src="images/image35.jpeg" alt="Hotel Impression"></div>
+      <div class="slide"><img src="images/image36.jpeg" alt="Hotel Impression"></div>
+      <div class="slide"><img src="images/image37.jpeg" alt="Hotel Impression"></div>
+      <div class="slide"><img src="images/image38.jpeg" alt="Hotel Impression"></div>
+      <div class="slide"><img src="images/image39.jpeg" alt="Hotel Impression"></div>
+      <div class="slide"><img src="images/image40.jpeg" alt="Hotel Impression"></div>
+      <div class="slide"><img src="images/image41.jpeg" alt="Hotel Impression"></div>
+      <div class="slide"><img src="images/image42.jpeg" alt="Hotel Impression"></div>
     </div>
-  </main>
 
-  <img src="images/image14.jpeg" alt="Hotel Logo" class="logo-img">
-</header>
+    <!-- Navigation Dots -->
+    <div class="slideshow-dots" id="dotsContainer"></div>
+  </section>
 
-<nav class="custom-nav">
-  <ul>
-    <li><a href="index.html">Start</a></li>
-    <li><a href="uber-uns.html">Über uns</a></li>
-    <li><a href="kontakt.html">Kontakt</a></li>
-    <li><a href="impressum.html">Impressum</a></li>
-    <li><a href="datenschutzerklärung.html">Datenschutz</a></li>
-  </ul>
-</nav>
+  <!-- Footer Navigation -->
+  <div class="header-flex">
+    <nav aria-label="Fußnavigation">
+      <ul>
+        <li><a href="index.html">Start</a></li>
+        <li><a href="uber-uns.html">Über uns</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="impressum.html">Impressum</a></li>
+        <li><a href="datenschutzerklärung.html">Datenschutz</a></li>
+      </ul>
+    </nav>
 
+    <img src="images/image14.jpeg" alt="Gastpark Hotel Logo" class="logo-img">
+  </div>
+  
+  <script src="menu.js"></script>
+  
+  <!-- Slideshow Script -->
   <script>
     let slideIndex = 0;
+    const slides = document.getElementsByClassName("slide");
+    const dotsContainer = document.getElementById("dotsContainer");
+
+    // Create dots
+    for (let i = 0; i < slides.length; i++) {
+      const dot = document.createElement("span");
+      dot.className = "dot";
+      dot.onclick = function() { currentSlide(i); };
+      dotsContainer.appendChild(dot);
+    }
+
+    const dots = document.getElementsByClassName("dot");
+
     function showSlides() {
-      const slides = document.getElementsByClassName("slide");
+      // Hide all slides
       for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+        slides[i].classList.remove("active");
+        dots[i].classList.remove("active");
       }
+      
       slideIndex++;
       if (slideIndex > slides.length) slideIndex = 1;
-      slides[slideIndex - 1].style.display = "block";
-      setTimeout(showSlides, 2000);
+      
+      slides[slideIndex - 1].classList.add("active");
+      dots[slideIndex - 1].classList.add("active");
+      
+      setTimeout(showSlides, 3000); // Change image every 3 seconds
     }
+
+    function currentSlide(n) {
+      slideIndex = n;
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.remove("active");
+        dots[i].classList.remove("active");
+      }
+      slides[slideIndex].classList.add("active");
+      dots[slideIndex].classList.add("active");
+    }
+
+    // Start slideshow
     window.onload = showSlides;
   </script>
 

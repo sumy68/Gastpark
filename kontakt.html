@@ -1,160 +1,130 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kontakt- Gastpark Hotel</title>
-  <style>
-    body {
-      background-color: #000;
-      color: #fff;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
+  <meta charset="utf-8" />
+  <title>Kontakt – Gastpark Hotel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Kontaktieren Sie das Gastpark Hotel in Manching. Telefon, E-Mail und Informationen zur Anmietung unserer Veranstaltungsräume." />
 
-    header {
-      background-color: #000;
-      padding: 3rem 1rem;
-      text-align: center;
-    }
+  <!-- Webfont -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet" />
 
-    .logo-img {
-      max-width: 300px;
-      width: 100%;
-      height: auto;
-    }
-
-    .custom-nav {
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-
-    .custom-nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-    }
-
-    .custom-nav a {
-      text-decoration: none;
-      color: #d1bc8a;
-      border: 2px solid #fff;
-      padding: 0.5rem 1rem;
-      border-radius: 6px;
-      transition: all 0.3s ease;
-    }
-
-    .custom-nav a:hover {
-      background-color: #fff;
-      color: #000;
-      border-color: #d1bc8a;
-    }
-
-    main {
-      padding: 2rem;
-      max-width: 800px;
-      margin: auto;
-    }
-
-    footer {
-      background-color: #000;
-      color: #fff;
-      text-align: center;
-      padding: 2rem 1rem;
-    }
-
-    .footer-nav a {
-      color: #fff;
-      margin: 0 1rem;
-      text-decoration: none;
-    }
-  </style>
+  <!-- Externes Stylesheet -->
+  <link rel="stylesheet" href="style.css?v=2.0" />
 </head>
-<body>
-    <div id="root">
-        <div style="background-color:#000000; color:#ffffff; display: flex; justify-content: center; align-items: center; height: 200px; padding-top: 40px;">
-            <a href="/" class="logo-link">
-              <img decoding="async"
-                   src="images/image01.jpeg"
-                   srcset="images/image01.jpeg 1x"
-                   sizes="100vw"
-                   class="image-img image-geometry-rectangle-1 no-aspect-ratio"
-                   data-shape="rectangle"
-                   alt="Hotel Logo"
-                   style="max-width: 100%; height: auto;" />      
-            </a>
-          </div>
-<nav class="custom-nav">
-  <ul>
-    <li><a href="index.html">Start</a></li>
-    <li><a href="uber-uns.html">Über uns</a></li>
-    <li><a href="kontakt.html">Kontakt</a></li>
-    <li><a href="impressum.html">Impressum</a></li>
-    <li><a href="datenschutzerklaerung.html">Datenschutz</a></li>
-  </ul>
-</nav>
 
-<main>
-    <h1 style="color: #d1bc8a; text-align: center;">Kontakt</h1>
-    <section style="padding-bottom: 2rem;">
-        <section style="padding-top: 2rem;"></section>
-      <h2 style="color:#d1bc8a;">Hotelkontakt / Contact us</h2>
-      <p style="text-align:justify;">Telefon: <a href="tel:+4917662275779">+49 176 62275779</a></p>
-      <p style="text-align:justify;">Fax: 08459-3329578</p>
-      <p style="text-align:justify;">E-Mail: <a href="mailto:info@gastpark.de">info@gastpark.de</a></p>
-      <p style="text-align:justify;">Adresse: Weberstraße 5, Manching, 85077, Bayern, Deutschland</p>
-    </section>
+<body>
+
+  <!-- Top Logo -->
+  <div class="topbar">
+    <a href="index.html">
+      <img src="images/image01.jpeg" alt="Gastpark Hotel Logo">
+    </a>
+  </div>
+
   
-    <section style="padding-bottom: 2rem;">
-      <h2 style="color:#d1bc8a;">In Notfällen / Emergency cases</h2>
-      <p style="text-align:justify;">Telefon: +49 176 30752132</p>
-      <p style="text-align:justify;">Fax: 08459-3329578</p>
-      <p style="text-align:justify;"><strong>Hausmeister / Caretaker</strong></p>
-    </section>
+  <nav class="nav" aria-label="Hauptnavigation">
+    <div class="container nav-inner">
+      <button id="navToggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="navMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
   
-    <section style="padding-bottom: 2rem;">
-      <h2 style="color:#d1bc8a;">Kontaktmöglichkeit für die Anmietung der Veranstaltungsräumlichkeiten</h2>
-  
-      <div style="padding-bottom: 1rem;">
-        <h3 style="color:#ffff;">Veranstaltungshalle Hotel (bis zu 250 Personen)</h3>
-        <p style="text-align:justify;">E-Mail: <a href="mailto:info@gastpark.de">info@gastpark.de</a></p>
-      </div>
-  
-      <div>
-        <h3 style="color:#ffff;">Veranstaltungshalle in Ingolstadt (groß und klein, 200–1000 Personen)</h3>
-        <p style="text-align:justify;">E-Mail: <a href="mailto:eventpark-in@outlook.de">eventpark-in@outlook.de</a></p>
-        <p style="text-align:justify;">Telefon: +49 176 62275779</p>
-      </div>
-    </section>
-  </main>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<header>
-    <img src="images/image01.jpeg" alt="Hotel Logo" class="logo-img">
-  </header>
-  
-  <nav class="custom-nav">
-    <ul>
-      <li><a href="index.html">Start</a></li>
-      <li><a href="uber-uns.html">Über uns</a></li>
-      <li><a href="kontakt.html">Kontakt</a></li>
-      <li><a href="impressum.html">Impressum</a></li>
-      <li><a href="datenschutzerklärung.html">Datenschutz</a></li>
-    </ul>
+      <ul id="navMenu">
+        <li><a href="index.html">Start</a></li>
+        <li><a href="uber-uns.html">Über uns</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="impressum.html">Impressum</a></li>
+        <li><a href="datenschutzerklärung.html">Datenschutz</a></li>
+      </ul>
+    </div>
   </nav>
-  <main>
-  <p>&copy; 2025 Gastpark Hotel. Alle Rechte vorbehalten.</p>
-</footer>
+
+  <!-- Kontakt Content -->
+  <section class="section container sp-6">
+    <h2>Kontakt</h2>
+
+    <div class="info-grid" style="max-width: 900px; margin: 0 auto;">
+      
+      <!-- Hotelkontakt -->
+      <div class="info-card">
+        <h3>Hotelkontakt / Contact us</h3>
+        <p><strong>Telefon:</strong> <a href="tel:+4917662275779" style="color: var(--gold); text-decoration: none;">+49 176 62275779</a></p>
+        <p><strong>Fax:</strong> 08459-3329578</p>
+        <p><strong>E-Mail:</strong> <a href="mailto:info@gastpark.de" style="color: var(--gold); text-decoration: none;">info@gastpark.de</a></p>
+        <p><strong>Adresse:</strong><br>Weberstraße 5<br>85077 Manching<br>Bayern, Deutschland</p>
+      </div>
+
+      <!-- Notfälle -->
+      <div class="info-card">
+        <h3>In Notfällen / Emergency cases</h3>
+        <p><strong>Telefon:</strong> <a href="tel:+4917630752132" style="color: var(--gold); text-decoration: none;">+49 176 30752132</a></p>
+        <p><strong>Fax:</strong> 08459-3329578</p>
+        <hr class="rule">
+        <p><strong>Hausmeister / Caretaker</strong></p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Veranstaltungsräume -->
+  <section class="section container sp-6">
+    <h2>Veranstaltungsräume mieten</h2>
+
+    <div class="info-grid" style="max-width: 900px; margin: 0 auto;">
+      
+      <!-- Hotel Veranstaltungshalle -->
+      <div class="info-card">
+        <h3>Veranstaltungshalle Hotel</h3>
+        <p>Bis zu 250 Personen</p>
+        <hr class="rule">
+        <p><strong>E-Mail:</strong><br><a href="mailto:info@gastpark.de" style="color: var(--gold); text-decoration: none;">info@gastpark.de</a></p>
+        <p><strong>Telefon:</strong><br><a href="tel:+4917662275779" style="color: var(--gold); text-decoration: none;">+49 176 62275779</a></p>
+      </div>
+
+      <!-- Ingolstadt Veranstaltungshalle -->
+      <div class="info-card">
+        <h3>Veranstaltungshalle Ingolstadt</h3>
+        <p>Groß und klein: 200–1000 Personen</p>
+        <hr class="rule">
+        <p><strong>E-Mail:</strong><br><a href="mailto:eventpark-in@outlook.de" style="color: var(--gold); text-decoration: none;">eventpark-in@outlook.de</a></p>
+        <p><strong>Telefon:</strong><br><a href="tel:+4917662275779" style="color: var(--gold); text-decoration: none;">+49 176 62275779</a></p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Karte -->
+  <section class="section container sp-6">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2662.1447022494165!2d11.47780351584423!3d48.71542357927437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e7de1966eeaa5%3A0x272d1c2c8b5f254a!2sHotelgastpark!5e0!3m2!1sde!2sde!4v1717000000000!5m2!1sde!2sde"
+      width="100%"
+      height="450"
+      style="border:0;"
+      allowfullscreen
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      title="Google Maps – Gastpark Hotel">
+    </iframe>
+  </section>
+
+  <!-- Footer Navigation -->
+  <div class="header-flex">
+    <nav aria-label="Fußnavigation">
+      <ul>
+        <li><a href="index.html">Start</a></li>
+        <li><a href="uber-uns.html">Über uns</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="impressum.html">Impressum</a></li>
+        <li><a href="datenschutzerklärung.html">Datenschutz</a></li>
+      </ul>
+    </nav>
+
+    <img src="images/image14.jpeg" alt="Gastpark Hotel Logo" class="logo-img">
+  </div>
+  
+  <script src="menu.js"></script>
 
 </body>
 </html>
